@@ -6,44 +6,50 @@ import './styles/styles.scss';
 
 const Header = () => (
 
-    <header className="header">
-        <NavLink className="header__li__left" to="/" activeClassName="is-active">
-          <img className="header_img" src="resource/logo.png" alt="logo" />
+  <header className="header">
+    <div className="navbar">
+      <div className="left">
+        <NavLink className="header__left__li" to="/" activeClassName="is-active">
+          <img className="header__img" src="resource/logo.png" alt="logo" />
         </NavLink>
-        <NavLink className="header__li__left" to="/" activeClassName="is-active">
-          <div className="header__name">Clrod</div>
+        <NavLink className="header__left__li" to="/" activeClassName="is-active">
+          <div className="header__name">Clrod!</div>
         </NavLink>
-        <NavLink className="header__li" to="/service" activeClassName="is-active">Service</NavLink>
-        <NavLink className="header__li" to="/team" activeClassName="is-active">Team</NavLink>
-        <NavLink className="header__li" to="/contact" activeClassName="is-active">Contact</NavLink>
-      </header>
-
+      </div>
+      <div className="right">
+        <NavLink className="header__right__li" to="/service" activeClassName="is-active">Service</NavLink>
+        <NavLink className="header__right__li" to="/team" activeClassName="is-active">Team</NavLink>
+        <NavLink className="header__right__li" to="/contact" activeClassName="is-active">Contact</NavLink>
+      </div>
+    </div>
+  </header>
 
 )
 
 const MainPage = () => (
-  <div>
+  <div className="main">
     This is Main Page :
   </div>
 )
 
 const ServicePage = () => (
-  <div>
-    This is Service Page.
+  <div className="main">
+      This is Service Page.
   </div>
 )
 
 const TeamPage= () => (
-    <div>
-      This is Team Page.
-    </div>
+  <div className="main">
+        This is Team Page.
+  </div>
 )
 
 const ContactPage= () => (
-  <div>
-    This is Contact Page.
+  <div className="main">
+      This is Contact Page.
   </div>
 )
+
 const NotFoundPage = () => (
   <h1>
     404! <Link to="/">Go Home</Link>
