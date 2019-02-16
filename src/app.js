@@ -5,11 +5,19 @@ import 'normalize.css/normalize.css'
 import './styles/styles.scss';
 
 const Header = () => (
-  <header>
-    <NavLink to="/service" activeClassName="is-active">Service</NavLink>
-    <NavLink to="/team" activeClassName="is-active">Team</NavLink>
-    <NavLink to="/contact" activeClassName="is-active">Contact</NavLink>
-  </header>
+
+    <header className="header">
+        <NavLink className="header__li__left" to="/" activeClassName="is-active">
+          <img className="header_img" src="resource/logo.png" alt="logo" />
+        </NavLink>
+        <NavLink className="header__li__left" to="/" activeClassName="is-active">
+          <div className="header__name">Clrod</div>
+        </NavLink>
+        <NavLink className="header__li" to="/service" activeClassName="is-active">Service</NavLink>
+        <NavLink className="header__li" to="/team" activeClassName="is-active">Team</NavLink>
+        <NavLink className="header__li" to="/contact" activeClassName="is-active">Contact</NavLink>
+      </header>
+
 
 )
 
@@ -37,9 +45,9 @@ const ContactPage= () => (
   </div>
 )
 const NotFoundPage = () => (
-  <div>
+  <h1>
     404! <Link to="/">Go Home</Link>
-  </div>
+  </h1>
 )
  
 const routes = (

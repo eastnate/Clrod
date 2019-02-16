@@ -1,8 +1,49 @@
-$brand-color: blue;
+@import './base/base';
+
+$brand-color:#03a87c;
+
 * {
     color: $brand-color;
 }
 
+.header {
+    width:80%;
+	padding-bottom:.0.1rem;
+	background-color: #FFF;
+	box-shadow: 2px 2px 4px 2px #CCC;
+    // position:fixed;
+    display: flex;
+    margin: 0 auto;
+}
+
+.header__li {
+    text-decoration:none;
+    list-style:none;
+	letter-spacing:0.2em;
+    width:30%;
+    justify-content: flex-end;
+    padding:1rem;
+    margin: 0.5;
+    font-weight:bold;
+    font-size: 2.3rem;
+}
+
+.header__li__left {
+    text-decoration:none;
+    padding: 1rem;
+}
+
+.header_img {
+    width: 5rem;
+    height: 3.7rem;
+}
+
+.header__name{
+    color: black;
+    padding-right: 60rem;
+    font-weight:bold;
+}
+
 .is-active {
-    color: red
+    color: rgb(1, 88, 65)
 }
