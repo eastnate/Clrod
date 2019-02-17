@@ -9,10 +9,10 @@ const Header = () => (
   <header className="header">
     <div className="navbar">
       <div className="left">
-        <NavLink className="header__left__li" to="/" activeClassName="is-active">
+        <NavLink className="header__left__li" to="/">
           <img className="header__img" src="resource/logo.png" alt="logo" />
         </NavLink>
-        <NavLink className="header__left__li" to="/" activeClassName="is-active">
+        <NavLink className="header__left__li" to="/">
           <div className="header__name">Clrod!</div>
         </NavLink>
       </div>
@@ -28,7 +28,36 @@ const Header = () => (
 
 const MainPage = () => (
   <div className="main">
-    This is Main Page :
+    <div className="main__contents">
+      <h1 className="main__sentence">
+      Creativity grows in an environment where you can enjoy it.
+      </h1>
+      <p className="main__subsentence">누구나 성장할수있는 플랫폼을 위해</p>
+      <button className="main__button">Check a service →</button>
+      <div>
+        <img className="main__img" src="resource/monster.jpg" alt="loading.." />
+      </div>
+      <p> What we do </p>
+      <div className="main__what">
+        <img className="main__what__img" src="resource/1.png" alt="loading.." />
+        <img className="main__what__img" src="resource/2.png" alt="loading.." />
+        <img className="main__what__img" src="resource/3.png" alt="loading.." />
+        <img className="main__what__img" src="resource/4.png" alt="loading.." />
+        <img className="main__what__img" src="resource/5.png" alt="loading.." />
+      </div>
+      <div className="main__what">
+        <p className="main__what__text">aasf</p>
+        <p className="main__what__text">aasf</p>
+        <p className="main__what__text">aasf</p>
+        <p className="main__what__text">aasf</p>
+        <p className="main__what__text">aasf</p>
+      </div>
+
+      <div>
+        <img src="resource/roz.jpg" alt="loading.." />
+        <p>asdf</p>
+      </div>
+    </div>
   </div>
 )
 
