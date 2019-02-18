@@ -32,12 +32,12 @@ const MainPage = () => (
       <h1 className="main__sentence">
       Creativity grows in an environment where you can enjoy it.
       </h1>
-      <p className="main__subsentence">누구나 성장할수있는 플랫폼을 위해</p>
-      <button className="main__button">Check a service →</button>
+      <p className="main__subsentence">함께 성장 할 수 있는 사람들과 함께, 누구나 성장 할 수 있는 플램폼을 향해</p>
+      <button className="main__button">Check a service</button>
       <div>
         <img className="main__img" src="resource/monster.jpg" alt="loading.." />
       </div>
-      <p> What we do </p>
+      <p className="main__whatwedo"> What we do </p>
       <div className="main__what">
         <img className="main__what__img" src="resource/1.png" alt="loading.." />
         <img className="main__what__img" src="resource/2.png" alt="loading.." />
@@ -46,11 +46,11 @@ const MainPage = () => (
         <img className="main__what__img" src="resource/5.png" alt="loading.." />
       </div>
       <div className="main__what">
-        <p className="main__what__text">aasf</p>
-        <p className="main__what__text">aasf</p>
-        <p className="main__what__text">aasf</p>
-        <p className="main__what__text">aasf</p>
-        <p className="main__what__text">aasf</p>
+        <p className="main__what__text">개발</p>
+        <p className="main__what__text">휴식</p>
+        <p className="main__what__text">창조</p>
+        <p className="main__what__text">협업</p>
+        <p className="main__what__text">출퇴근</p>
       </div>
 
       <div>

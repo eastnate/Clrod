@@ -1,5 +1,6 @@
 @import './base/base';
-
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 $brand-color:#03a87c;
 
 * {
@@ -85,16 +86,22 @@ $brand-color:#03a87c;
 
 .main__contents {
     text-align: center;
-    font-family:  "Poppins",Helvetica,sans-serif;
+    
 }
 .main__sentence {
     color: black;
+    font-family:  "Poppins",Helvetica,sans-serif;   
 }
 
 .main__subsentence {
-    color: rgb(73, 68, 68);
-    font-size: 2.2rem;
+    color: rgb(53, 49, 49);
+    font-size: 1.8rem;
+    font-family: 'Nanum Gothic', sans-serif;
+    font-weight: bold;
 }
+
+
+
 .main__img {
     width: 60rem;
     height: 50rem;
@@ -102,6 +109,11 @@ $brand-color:#03a87c;
 
 .main__what {
     display: flex;
+}
+
+.main__whatwedo {
+    font-family:  "Poppins",Helvetica,sans-serif; 
+    color: black;
 }
 
 .main__what__img {
@@ -113,3 +125,32 @@ $brand-color:#03a87c;
 .main__what__text {
     margin: 0 auto;
 }
+
+
+.main__button{
+  background: rgb(2, 167, 16);
+  color:#fff;
+  border:none;
+  border-radius: 1rem;
+  position:relative;
+  height:4.8rem;
+  width: 17rem;
+  font-size: 2rem;
+  padding:0 1rem;
+  transition: 800ms ease all;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+.main__button:hover{
+  background:#fff;
+  color: rgb(2, 167, 16);
+  border: solid;
+  border-color: rgb(2, 167, 16);
+  border-width: 0.1rem;
+}
+
+.main__button:focus {
+     outline:0 !important;
+}
+
+
