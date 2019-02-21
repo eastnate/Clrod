@@ -3,7 +3,10 @@ import ReactDOM from 'react-dom'
 import { BrowserRouter, Route, Switch, Link, NavLink } from 'react-router-dom'
 import 'normalize.css/normalize.css'
 import './styles/styles.scss'
-import MainPage from './Mainpage.js'
+import MainPage from './MainPage/Mainpage.js'
+import ServicePage from './ServicePage/ServicePage.js'
+import TeamPage from './TeamPage/TeamPage.js'
+import ContactPage from './ContactPage/ContactPage.js'
 
 
 class ScrollToTop extends React.Component {
@@ -43,7 +46,7 @@ const Header = () => (
 
 const Footer = () => (
   <footer className="footer">
-    <p className="footer__text"> © 2019 grepp, Inc</p>
+    <p className="footer__text"> © 2019 Clrod, Inc</p>
     <p className="footer__text">주소 : 서울특별시 성동구 마조로 15가길 23</p>
     <p className="footer__text">
       23, Majo-ro 15ga-gil, Seongdong-gu, Seoul, Republic of Korea</p>
@@ -52,24 +55,6 @@ const Footer = () => (
   </footer>
 )
 
-
-const ServicePage = () => (
-  <div className="main">
-    This is Service Page.
-  </div>
-)
-
-const TeamPage = () => (
-  <div className="main">
-    This is Team Page.
-  </div>
-)
-
-const ContactPage = () => (
-  <div className="main">
-    This is Contact Page.
-  </div>
-)
 
 const NotFoundPage = () => (
   <h1>

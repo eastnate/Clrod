@@ -1,10 +1,9 @@
-@import './base/base';
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
-@import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
 .main {
     width: 121rem;
-    height: 140rem;
+    height: 150rem;
     border-radius: 3rem;
     margin: 9rem 22rem;
     background-color: rgb(255, 255, 255);
@@ -23,26 +22,25 @@
 .main__subsentence {
     color: rgb(53, 49, 49);
     font-size: 1.8rem;
-    font-family: 'Nanum Gothic', sans-serif;
+    font-family: sans-serif;
     font-weight: bold;
 }
 
-
-
 .main__img {
-    width: 108rem;
-    height: 51rem;
+    width: 60rem;
+    height: 50rem;
+    margin: 5rem auto;
     
 }
 
 .main__whatwedo {
-    margin: 6rem;
+    margin-top: 1rem;
     font-family:  "Poppins",Helvetica,sans-serif; 
     color: black;
+    margin-bottom: 10rem;
 }
 
 .main__what {
-    
     display: flex;
 }
 
@@ -52,21 +50,14 @@
     height: 9rem;
 }
 
-.main__what__text {
-    margin: 0 auto;
-    color: black;
-    font-family: Helvetica,sans-serif;
-    font-size: 2.3rem;
-}
 
 .main__what__sub__text {
     width: 20rem;
     margin: 3.5rem auto;
     color: black;
-    font-family: Helvetica,sans-serif;
-    font-size: 1.8rem;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2.1rem;
 }
-
 
 .main__button{
   background: rgb(2, 167, 16);
