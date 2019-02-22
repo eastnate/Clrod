@@ -6,10 +6,22 @@ import './ContactPage.scss'
 
 
 const ContactPage = () => (
-    <div className="main">
-      This is Contact Page.
-    </div>
-  )
+  <div className="contact">
+  <h3 className="contact__title">Connect With Us</h3>
+    <div className="contact__contents">
 
-  
+      <img className="contact__email" src="resource/email.png" alt="loading.." />
+      <img className="contact__location" src="resource/location.png" alt="loading.." />
+    </div>
+    <div className="contact__buttons">
+      <button className="contact__button" >E-Mail</button>
+      <button className="contact__button" >Location</button>
+    </div>
+
+
+
+  </div>
+)
+
+
 export default ContactPage

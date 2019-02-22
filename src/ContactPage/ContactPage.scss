@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:700');
+
+.contact {
+    width: 121rem;
+    height: 55rem;
+    border-radius: 3rem;
+    margin: 9rem auto;
+    background-color: #fff;
+    padding: 1rem;
+    
+}
+.contact__title {
+    color: black;
+    text-align: center;
+    font-family:  "Poppins",Helvetica,sans-serif; 
+    margin: 5rem 0rem;
+}
+
+.contact__contents {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.contact__email {
+
+    width: 23rem;
+    height: 22rem;
+    margin-top: 3.4rem;
+    margin-bottom: 3rem;
+    margin-right: 15rem;
+}
+
+.contact__location {
+    width: 23rem;
+    height: 22rem;
+    margin-top: 2rem;
+    margin-bottom: 3.7rem;
+
+}
+
+.contact__buttons{
+    
+    display: flex;
+    justify-content: center;
+}
+
+.contact__button{
+    background: rgb(2, 167, 16);
+    color:#fff;
+    border:none;
+    border-radius: 0.8rem;
+    height:4.2rem;
+    width: 11.8rem;
+    font-size: 1.6rem;
+    padding:0 1rem;
+    transition: 800ms ease all;
+    margin: 3 14rem;
+  }
+  .contact__button:hover{
+    background:#fff;
+    color: rgb(2, 167, 16);
+    border: solid;
+    border-color: rgb(2, 167, 16);
+    border-width: 0.1rem;
+  }
+  
+  .contact__button:focus {
+       outline:0 !important;
+  }
+  
+  
