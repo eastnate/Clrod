@@ -47,7 +47,6 @@ const Header = () => (
 const Footer = () => (
   <footer className="footer">
     <p className="footer__text"> © 2019 Clrod, Inc</p>
-    <p className="footer__text">주소 : 서울특별시 성동구 마조로 15가길 23</p>
     <p className="footer__text">
       23, Majo-ro 15ga-gil, Seongdong-gu, Seoul, Republic of Korea</p>
     <p className="footer__text">

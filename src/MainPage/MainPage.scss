@@ -38,6 +38,7 @@
     font-family:  "Poppins",Helvetica,sans-serif; 
     color: black;
     margin-bottom: 10rem;
+    font-size: 4rem;
 }
 
 .main__what {
@@ -48,15 +49,19 @@
     margin: 2rem auto;
     width: 9rem;
     height: 9rem;
+    padding: 2rem 5rem;
+    border-top: 0.3rem groove rgb(67, 223, 137);
 }
 
 
 .main__what__sub__text {
     width: 20rem;
-    margin: 3.5rem auto;
+    margin: 1rem auto;
     color: black;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 2.1rem;
+    padding-bottom: 3rem;
+    border-bottom: 0.3rem groove rgb(67, 223, 137);
 }
 
 .main__button{

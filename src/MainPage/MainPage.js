@@ -27,10 +27,10 @@ const MainPage = () => (
         </div>
   
         <div className="main__what">
-          <p className="main__what__sub__text">스스로의 업무를 정의하고 수행하는 사람들의 모여있습니다</p>
-          <p className="main__what__sub__text">실용적이고 개발자 친화적인 문화로 일에 본질에만 집중할 수 있습니다</p>
-          &nbsp;&nbsp;<p className="main__what__sub__text"> 토의하고 이야기하며 같이 해결해 나가는 문화를 느낄수있습니다.</p>
-          <p className="main__what__sub__text">탄력적인 출퇴근 문화로, 개인별 상황에 따른 자율출근을 합니다</p>
+          <p className="main__what__sub__text">We define and do our own work.</p>
+          <p className="main__what__sub__text">We focus on the essence of our work with a pragmatic, developer-friendly culture.</p>
+          &nbsp;&nbsp;<p className="main__what__sub__text">We're creating a culture where we can discuss, talk, and solve together.</p>
+          <p className="main__what__sub__text">We have a flexible commute culture based on individual situations :)</p>
         </div>
       </div>
     </div>
