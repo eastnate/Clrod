@@ -5,7 +5,8 @@ import 'normalize.css/normalize.css'
 import './ServicePage.scss'
 
 const ServicePage = () => (
-    <div className="main">
+    <div className="service">
+
       <div className = 'main__div'>
         <div>Velbi.io</div>
         <p>벨비는 어쩌구 저쩌구 입니다.</p>
