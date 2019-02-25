@@ -53,20 +53,28 @@
     font-size: 2.2rem;
     line-height:180%;
     color: rgba(0, 0, 0, 0.774);
+    text-align: left;
+}
+
+.team__contents__text::first-letter {
+    font-size:200%;
+    color: rgb(2, 167, 16);
 }
 
 .team__contents__image {
     float: right;
     width: 41rem;
     height: 25rem;
+    padding: 1.5rem;
+    padding-bottom: 0.5rem;
 }
-.team__photos{
+.team__photos {
     width: 125rem;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
 }
-.team__photos__image{
+.team__photos__image {
     width: 38rem;
     height: 25rem;
     

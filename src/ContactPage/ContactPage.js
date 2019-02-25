@@ -9,10 +9,10 @@ const ContactPage = () => (
   <div className="contact">
   <img className="contact__image" src="resource/team.png" alt="loading.." />
 
-      <p className="contact__text">Contact ! </p>
-
+  <p className="contact__text">Contact ! </p>
 
   <h3 className="contact__title">Connect With Us</h3>
+  
     <div className="contact__contents">
 
       <img className="contact__email" src="resource/email.png" alt="loading.." />
