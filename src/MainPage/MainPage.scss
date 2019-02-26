@@ -3,21 +3,24 @@
 
 .main {
     width: 121rem;
-    height: 160rem;
+    height: 180rem;
     border-radius: 3rem;
     margin: 9rem auto;
     background-color: rgb(255, 255, 255);
     padding: 1rem;
-
 }
 
 .main__contents {
-    text-align: center;
+    display: flex;
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
 
 }
 .main__sentence {
     color: black;
-    font-family:  "Poppins",Helvetica,sans-serif;   
+    font-family:  "Poppins",Helvetica,sans-serif;  
+    text-align: center; 
 }
 
 .main__subsentence {
@@ -28,9 +31,10 @@
 }
 
 .main__img {
-    width: 60rem;
-    height: 50rem;
-    margin: 5rem auto;
+    margin-left: 5rem;
+    width: 120rem;
+    height: 70rem;
+    background-color: blueviolet;
     
 }
 
@@ -44,25 +48,35 @@
 
 .main__what {
     display: flex;
+    width: 120rem;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
 }
 
+.main__what__contents {
+    margin: 0.2rem 3rem;
+    padding: 3.5rem;
+    border-top: 0.3rem groove rgb(67, 223, 137);
+    border-bottom: 0.3rem groove rgb(67, 223, 137);
+    width: 20rem;    
+    display: flex;
+    flex-direction: column;  /* make main axis vertical */
+    align-items: center;     /* center items horizontally, in this case */
+
+}
 .main__what__img {
-    margin: 2rem auto;
     width: 9rem;
     height: 9rem;
-    padding: 2rem 5rem;
-    border-top: 0.3rem groove rgb(67, 223, 137);
+    
 }
 
 
 .main__what__sub__text {
-    width: 20rem;
-    margin: 1rem auto;
+    width: 24srem;
     color: black;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 2.1rem;
-    padding-bottom: 3rem;
-    border-bottom: 0.3rem groove rgb(67, 223, 137);
 }
 
 .main__button{
