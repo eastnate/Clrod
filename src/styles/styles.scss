@@ -17,7 +17,7 @@ $text-color: rgba(255, 253, 253, 0.68);
 }
 //-----------------------------------------------
 .header {
-    
+    z-index: 3;
     position: fixed;
     width: 100%;
     background-color: #FFF;
