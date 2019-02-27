@@ -28,7 +28,7 @@ const Header = () => (
     <div className="navbar">
       <div className="left">
         <NavLink className="header__left__li" to="/">
-          <img className="header__img" src="resource/logo.png" alt="logo" />
+          <img className="header__img" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/logo.png?alt=media&token=2e03f469-c50d-4881-a865-bc94588f092b" alt="logo" />
         </NavLink>
         <NavLink className="header__left__li" to="/">
           <div className="header__name">Clrod!</div>
