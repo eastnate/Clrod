@@ -17,10 +17,11 @@
 
 
 .contact__text {
-  align-content: center;
-  position: absolute;
-  top: 15rem;
-  left: 42%;
+
+    position: absolute;
+    top: 27%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   color: #fff;
   font-weight: bold;
   font-size: 7rem;

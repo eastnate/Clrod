@@ -2,10 +2,12 @@
 
 .team {
     width: 100%;
-    height: 190%;
+    height: auto; 
     border-radius: 3rem;
     margin: 3rem auto;
-    background-color: #fff;
+    background-color: white;
+    overflow: auto;
+    margin-bottom: 20rem;
     
 }
 
@@ -30,7 +32,7 @@
     left: 18%;
     color: white;
     font-size: 3rem;
-    width:120rem; /* width: 100px; */
+    width:120rem; 
     white-space: pre-wrap;
     line-height:180%;
 }
@@ -53,7 +55,7 @@
     line-height:180%;
     color: rgba(0, 0, 0, 0.774);
     text-align: left;
-    //font-family: 'Noto Serif KR', serif;
+
 }
 
 .team__contents__text::first-letter {
@@ -66,6 +68,7 @@
     width: 41rem;
     height: 25rem;
     padding: 1rem;
+    overflow: hidden;
 
 }
 .team__photos {

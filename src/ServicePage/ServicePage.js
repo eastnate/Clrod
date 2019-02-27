@@ -19,8 +19,8 @@ const ServicePage = () => (
       
       
 
-<figure class="snip1321"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample26.jpg" alt="sq-sample26"/>
-  <figcaption><i class="ion-upload"></i>
+<figure className="snip1321"><img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sq-sample26.jpg" alt="sq-sample26"/>
+  <figcaption><i className="ion-upload"></i>
     <h4>Velbi.io</h4>
     <h2>벨비</h2>
   </figcaption><a href="#"></a>
@@ -29,31 +29,31 @@ const ServicePage = () => (
 
 
 
-<figure class="snip1321"><img src='resource/serviceA.png' alt="sq-sample28"/>
-  <figcaption><i class="ion-share"></i>
+<figure className="snip1321"><img src='resource/serviceA.png' alt="sq-sample28"/>
+  <figcaption><i className="ion-share"></i>
     <h4>ComicStack</h4>
     <h2>코스</h2>
   </figcaption><a href="#"></a>
 </figure>
 
 
-<figure class="snip1321"><img src='resource/serviceB.png' alt="sq-sample26"/>
-  <figcaption><i class="ion-upload"></i>
+<figure className="snip1321"><img src='resource/serviceB.png' alt="sq-sample26"/>
+  <figcaption><i className="ion-upload"></i>
     <h4>Cudi    </h4>
     <h2>쿠디</h2>
   </figcaption><a href="#"></a>
 </figure>
 
 
-<figure class="snip1321"><img src='resource/serviceC.png' alt="sq-sample26"/>
-  <figcaption><i class="ion-upload"></i>
+<figure className="snip1321"><img src='resource/serviceC.png' alt="sq-sample26"/>
+  <figcaption><i className="ion-upload"></i>
     <h4>Solla    </h4>
     <h2>솔라</h2>
   </figcaption><a href="#"></a>
 </figure>
 
-<figure class="snip1321"><img src='resource/serviceD.png' alt="sq-sample26"/>
-  <figcaption><i class="ion-upload"></i>
+<figure className="snip1321"><img src='resource/serviceD.png' alt="sq-sample26"/>
+  <figcaption><i className="ion-upload"></i>
     <h4>Clrod Renderer</h4>
     <h2>렌더머신</h2>
   </figcaption><a href="#"></a>
