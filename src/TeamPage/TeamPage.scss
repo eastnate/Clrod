@@ -11,6 +11,7 @@
 }
 
 .team__image {
+    width: 100%;
     height: 45rem;
 }
 
@@ -69,11 +70,13 @@
     overflow: hidden;
 
 }
+
 .team__photos {
-    width: 120rem;
+    width: 70%;
     margin: 0 auto;
     display: flex;
     justify-content: flex-start;
+
 }
 .team__photos__image {
     width: 20rem;

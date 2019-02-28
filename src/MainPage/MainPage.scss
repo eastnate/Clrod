@@ -22,14 +22,14 @@
     font-family:  "Poppins",Helvetica,sans-serif;  
     text-align: center; 
     margin: 6rem 14rem;
-    font-size: 2rem; 
+    //font-size: 2rem; 
 }
 
-@media(min-width: 70rem) and  (max-width:  85rem){
-    .main__sentence {
-        font-size: 8rem;
-    }
-}
+// @media(min-width: 53rem) and  (max-width:  90rem){
+//     .main__sentence {
+//         font-size: 8rem;
+//     }
+// }
 
 .main__subsentence {
     color: rgb(53, 49, 49);
