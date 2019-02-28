@@ -25,11 +25,6 @@
     //font-size: 2rem; 
 }
 
-// @media(min-width: 53rem) and  (max-width:  90rem){
-//     .main__sentence {
-//         font-size: 8rem;
-//     }
-// }
 
 .main__subsentence {
     color: rgb(53, 49, 49);
@@ -73,12 +68,11 @@
 .main__what__img {
     width: 9rem;
     height: 9rem;
-    
 }
 
 
 .main__what__sub__text {
-    width: 24srem;
+    width: 24rem;
     color: black;
     font-family: 'Nanum Pen Script', cursive;
     font-size: 2.1rem;
@@ -108,3 +102,110 @@
      outline:0 !important;
 }
 
+
+
+
+@media ( max-width: 768px ) {
+  
+    .main__img {
+        width: 80rem;
+        height: 45rem;
+    }
+  }
+
+
+.main__what {
+    display: flex;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.main__what__contents {
+    margin: 0.2rem 3rem;
+    padding: 3.5rem;
+    border-top: 0.3rem groove rgb(67, 223, 137);
+    border-bottom: 0.3rem groove rgb(67, 223, 137);
+    width: 20rem;    
+    display: flex;
+    flex-direction: column;  /* make main axis vertical */
+    align-items: center;     /* center items horizontally, in this case */
+
+}
+.main__what__img {
+    width: 9rem;
+    height: 9rem;
+}
+
+
+.main__what__sub__text {
+    width: 24rem;
+    color: black;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 2.1rem;
+}
+
+
+
+
+
+
+@media ( max-width: 375px ) {
+    
+  .main__sentence {
+    color: black;
+    font-family:  "Poppins",Helvetica,sans-serif;  
+    text-align: center; 
+    margin: 3rem 1rem;
+    font-size: 3rem; 
+}
+
+
+.main__subsentence {
+    color: rgb(53, 49, 49);
+    font-size: 0.8rem;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+    .main__img {
+        width: 44rem;
+        height: 28rem;
+    }
+
+
+    .main__what {
+        display: flex;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .main__what__contents {
+        margin: 0.2rem 3rem;
+        padding: 3.5rem;
+        border-top: 0.3rem groove rgb(67, 223, 137);
+        border-bottom: 0.3rem groove rgb(67, 223, 137);
+        width: 20rem;    
+        display: flex;
+        flex-direction: column;  /* make main axis vertical */
+        align-items: center;     /* center items horizontally, in this case */
+    
+    }
+    .main__what__img {
+        width: 9rem;
+        height: 9rem;
+    }
+    
+    
+    .main__what__sub__text {
+        width: 24rem;
+        color: black;
+        font-family: 'Nanum Pen Script', cursive;
+        font-size: 2.1rem;
+    }
+    
+}
