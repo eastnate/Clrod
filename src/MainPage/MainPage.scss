@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Pen+Script');
 
+
 .main {
     width: 80%;
     height: auto;
@@ -22,7 +23,9 @@
     font-family:  "Poppins",Helvetica,sans-serif;  
     text-align: center; 
     margin: 6rem 14rem;
-    //font-size: 2rem; 
+
+
+    letter-spacing: 0,1rem;
 }
 
 
@@ -30,67 +33,32 @@
     color: rgb(53, 49, 49);
     font-size: 1.8rem;
     font-family: sans-serif;
-    font-weight: bold;
+    letter-spacing: 0.1rem;
+
 }
 
 .main__img {
-    width: 100rem;
-    height: 60rem;
-}
-
-.main__whatwedo {
-    margin-top: 10rem;
-    font-family:  "Poppins",Helvetica,sans-serif; 
-    color: black;
-    margin-bottom: 10rem;
-    font-size: 4rem;
-}
-
-.main__what {
-    display: flex;
-    width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-}
-
-.main__what__contents {
-    margin: 0.2rem 3rem;
-    padding: 3.5rem;
-    border-top: 0.3rem groove rgb(67, 223, 137);
-    border-bottom: 0.3rem groove rgb(67, 223, 137);
-    width: 20rem;    
-    display: flex;
-    flex-direction: column;  /* make main axis vertical */
-    align-items: center;     /* center items horizontally, in this case */
-
-}
-.main__what__img {
-    width: 9rem;
-    height: 9rem;
+    width: 108rem;
+    height: 62rem;
 }
 
 
-.main__what__sub__text {
-    width: 24rem;
-    color: black;
-    font-family: 'Nanum Pen Script', cursive;
-    font-size: 2.1rem;
-}
 
-.main__button{
+
+.main__button {
   background: rgb(2, 167, 16);
   color:#fff;
   border:none;
   border-radius: 0.8rem;
   height:4.8rem;
   width: 17rem;
-  font-size: 1.67rem;
+  font-size: 2rem;
   padding:0 1rem;
   transition: 800ms ease all;
   margin-top: 3rem;
 }
-.main__button:hover{
+
+.main__button:hover {
   background:#fff;
   color: rgb(2, 167, 16);
   border: solid;
@@ -102,17 +70,15 @@
      outline:0 !important;
 }
 
+.main__whatwedo {
 
-
-
-@media ( max-width: 768px ) {
-  
-    .main__img {
-        width: 80rem;
-        height: 45rem;
-    }
-  }
-
+    color: black;
+    font-size: 1.9rem;
+    font-weight: bold;
+    letter-spacing:0.5rem;
+    margin-top: 14rem;
+    margin-bottom: 6.5rem;
+}
 
 .main__what {
     display: flex;
@@ -123,31 +89,43 @@
 }
 
 .main__what__contents {
-    margin: 0.2rem 3rem;
-    padding: 3.5rem;
-    border-top: 0.3rem groove rgb(67, 223, 137);
-    border-bottom: 0.3rem groove rgb(67, 223, 137);
+    margin: 2rem 0.5rem;
+    padding: 5rem 3.5rem;
     width: 20rem;    
     display: flex;
     flex-direction: column;  /* make main axis vertical */
     align-items: center;     /* center items horizontally, in this case */
+    text-align: center;
+    border-radius: 5%;
+    box-shadow: 2px 2px 4px 2px #ccc;
+
 
 }
 
+.icon {
+    font-size: 11rem;
+}
 .main__what__img {
-    width: 9rem;
-    height: 9rem;
+    padding: 3rem 0.2rem;
 }
+
 
 .main__what__sub__text {
     width: 24rem;
-    color: black;
+    color: rgb(2, 167, 16);
     font-family: 'Nanum Pen Script', cursive;
-    font-size: 2.1rem;
+    font-size: 2.5rem;
 }
 
+@media ( max-width: 768px ) {
+  
+    .main__img {
+            width: 80rem;
+            height: 45rem;
+        }
+}
 
-
+//iPhoneX
 @media ( max-width: 375px ) {
     
   .main__sentence {
@@ -156,63 +134,73 @@
     text-align: center; 
     margin: 3rem 0rem;
     font-size: 3rem; 
-}
+    }
 
+    .main__subsentence {
+        color: rgb(53, 49, 49);
+        font-size: 0.8rem;
+        font-family: sans-serif;
+        font-weight: bold;
+    }
 
-.main__subsentence {
-    color: rgb(53, 49, 49);
-    font-size: 0.8rem;
-    font-family: sans-serif;
-    font-weight: bold;
-}
-.main__button{
-    background: rgb(2, 167, 16);
-    color:#fff;
-    border:none;
-    border-radius: 0.8rem;
-    height:3rem;
-    width: 10rem;
-    font-size: 1.2rem;
-    padding:0 1rem;
-    transition: 800ms ease all;
-    margin-top: 3rem;
-  }
+    .main__button{
+        background: rgb(2, 167, 16);
+        color:#fff;
+        border:none;
+        border-radius: 0.8rem;
+        height:3rem;
+        width: 10rem;
+        font-size: 0.9rem;
+        padding:0 1rem;
+        transition: 800ms ease all;
+        margin-top: 3rem;
+    }
+
     .main__img {
-        width: 41rem;
-        height: 27rem;
+        width: 42rem;
+        height: 25rem;
     }
 
 
-    .main__what {
-        display: flex;
-        width: 100%;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-    }
-    
-    .main__what__contents {
-        margin: 0.2rem 1rem;
-        padding: 2rem;
-        border-top: 0.3rem groove rgb(67, 223, 137);
-        border-bottom: 0.3rem groove rgb(67, 223, 137);
-        width: 19rem;    
-        display: flex;
-        flex-direction: column;  /* make main axis vertical */
-        align-items: center;     /* center items horizontally, in this case */
-    
-    }
-    .main__what__img {
-        width: 9rem;
-        height: 9rem;
-    }
-    
-    
-    .main__what__sub__text {
-        width: 15rem;
+
+    .main__whatwedo {
+        text-align: center;
         color: black;
-        font-family: 'Nanum Pen Script', cursive;
-        font-size: 2.1rem;
+        font-size: 1rem;
+        font-weight: bold;
+        letter-spacing:0.1rem;
+        margin-top: 5rem;
+        margin-bottom: 3.5rem;
     }
-    
+
+
+.main__what__contents {
+    margin: 0.5rem 0.4rem;
+    width: 8rem;    
+    height: 10rem;
+    display: flex;
+    flex-direction: column;  /* make main axis vertical */
+    align-items: center;     /* center items horizontally, in this case */
+    border-radius: 4%;
+    text-align: center;
+    justify-content: center;
+
+
+
+}
+
+.icon {
+    font-size: 5rem;
+}
+.main__what__img {
+    padding: 0.5rem 0.1rem;
+}
+
+
+.main__what__sub__text {
+    width: 12rem;
+    color: rgb(2, 167, 16);
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 1.6rem;
+}
 }
