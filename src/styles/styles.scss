@@ -10,6 +10,8 @@ $text-color: rgba(255, 253, 253, 0.68);
 }
 
 //-----------------------------------------------
+
+
 .header {
     z-index: 3;
     position: fixed;
@@ -36,11 +38,13 @@ $text-color: rgba(255, 253, 253, 0.68);
 }
 
 .header__left__li {
+    display: flex;
     text-decoration: none;
     padding: 1rem 0.3rem;
 }
 
 .header__right__li {
+    display: flex;
     text-decoration: none;
     list-style: none;
 	letter-spacing:0.1rem;
@@ -51,6 +55,15 @@ $text-color: rgba(255, 253, 253, 0.68);
     font-weight: lighter;
     color: black
 }
+
+.header__right__togle {
+    text-decoration: none;
+    display: none;
+    padding-top: 1.2rem;
+    margin: 0 2rem;
+    font-size: 4rem;
+}
+
 .header__right__li:hover { 
     color: $brand-color;
   }
@@ -90,3 +103,36 @@ $text-color: rgba(255, 253, 253, 0.68);
     color: $text-color;
     font-size: 1.5rem;
 }
+
+@media (max-width : 800px){
+    .navbar {
+        width: 90%;
+    }
+    
+    .header__right__li {
+        display: none;
+    }
+   
+    .header__right__togle {
+        display: initial;
+    }
+   
+    .setMobile_r {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        
+        .header__right__li{
+            display: initial;
+            font-size: 3rem;
+        }
+        
+    }
+
+    .setMobile_l {
+        .header__left__li {
+            display: none;
+        }
+    }
+   
+}  
