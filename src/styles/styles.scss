@@ -2,26 +2,27 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 
-$brand-color:rgb(2, 167, 16);
+$clrod-green:rgb(2, 167, 16);
 $text-color: rgba(255, 253, 253, 0.68);
 
+
 * {
-    color: $brand-color;
+    color: $clrod-green;
 }
 
 .header {
     z-index: 3;
     position: fixed;
     width: 100%;
-    background-color: #FFF;
+    background-color: #FBFBFC;
     box-shadow: 2px 2px 4px 2px #ccc;
     top: 0;
 }
 
 .navbar {
-    width: 61%;
+    width: 70%;
     margin: 0 auto;
-    background-color: #FFF;
+    background-color: #FBFBFC;
     display: flex;
     justify-content: space-between;
 }
@@ -56,13 +57,13 @@ $text-color: rgba(255, 253, 253, 0.68);
 .header__right__togle {
     text-decoration: none;
     display: none;
-    padding-top: 1.6rem;
+    padding-top: 0.9rem;
     margin: 0 1rem;
-    font-size: 3rem;
+    font-size: 1.9rem;
 }
 
 .header__right__li:hover { 
-    color: $brand-color;
+    color: $clrod-green;
   }
 
 .header__img {
@@ -75,11 +76,10 @@ $text-color: rgba(255, 253, 253, 0.68);
     font-weight:bold;
     font-style: italic;
     font-size: 3.5rem;
-
 }
 
 .is-active {
-    color: $brand-color;
+    color: $clrod-green;
 }
 
 //-----------------------------------------------//
@@ -131,5 +131,8 @@ $text-color: rgba(255, 253, 253, 0.68);
         .header__left__li {
             display: none;
         }
+    }
+    .header__img{
+        display: none;
     }
 }  

@@ -6,8 +6,8 @@ import './ServicePage.scss'
 
 const ServicePage = () => (
   <div className="service">
+  <img className="service__image" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/service_banner.jpeg?alt=media&token=5c1fdb5f-88e4-43df-9ae4-28b747e26430" alt="loading.." />
 
-    <img className="service__image" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/service_banner.jpeg?alt=media&token=5c1fdb5f-88e4-43df-9ae4-28b747e26430" alt="loading.." />
     <p className="service__text">Beyond. </p>
     <p className="service__text__sub">Clrod has always been growing in the global market.</p>
     <h3 className="service__title">Service</h3>
@@ -49,6 +49,7 @@ const ServicePage = () => (
         </figcaption><a href="#"></a>
       </figure>
     </div>
+    
   </div>
 )
 

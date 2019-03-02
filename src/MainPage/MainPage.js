@@ -12,7 +12,6 @@ const MainPage = () => (
         </h1>
 
       <p className="main__subsentence">Software that Anyone can grow.</p>
-
       <Link to="/service">
         <button className="main__button" >Check a Service</button>
       </Link>
@@ -33,7 +32,7 @@ const MainPage = () => (
           <div className="main__what__img">
             <i class="fas fa-code-branch icon"></i>
           </div>
-          <p className="main__what__sub__text">Focus on the essence of our work with a developer-friendly culture.</p>
+          <p className="main__what__sub__text">Focus on our work with a developer-friendly culture.</p>
         </div>
 
         <div className="main__what__contents">
