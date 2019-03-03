@@ -1,6 +1,7 @@
 @import './base/base';
 @import url('https://fonts.googleapis.com/css?family=Poppins:700');
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
 $clrod-green:rgb(2, 167, 16);
 $text-color: rgba(255, 253, 253, 0.68);
@@ -42,7 +43,6 @@ $text-color: rgba(255, 253, 253, 0.68);
 }
 
 .header__right__li {
-    display: flex;
     text-decoration: none;
     list-style: none;
 	letter-spacing:0.1rem;
@@ -74,7 +74,7 @@ $text-color: rgba(255, 253, 253, 0.68);
 .header__name{
     color: black;
     font-weight:bold;
-    font-style: italic;
+    font-family: 'Permanent Marker', cursive;
     font-size: 3.5rem;
 }
 
@@ -82,6 +82,46 @@ $text-color: rgba(255, 253, 253, 0.68);
     color: $clrod-green;
 }
 
+
+.main__button {
+    padding: 0.05rem;
+    margin: 0 2rem;
+    margin-top: 1.3rem;
+
+    font-size: 1.6rem;
+    font-weight: lighter;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    color:$clrod-green;
+    border-radius: 0.5rem;
+    border-color: $clrod-green;
+    border: solid;
+    border-width: 0.1rem;
+
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    
+    height:3rem;
+    width: 7rem;
+    font-size: 1.7rem;
+    transition: 800ms ease all;
+  }
+  
+  .main__button:hover {
+    background:$clrod-green;
+    color: white;
+
+    border-color: $clrod-green;
+
+  }
+  
+  .main__button:focus {
+       outline:0 !important;
+  }
+  
 //-----------------------------------------------//
 
                 //----Main----//
@@ -101,6 +141,9 @@ $text-color: rgba(255, 253, 253, 0.68);
 }
 
 @media (max-width : 800px){
+    .main__button{
+        display: none;
+    }
     .navbar {
         width: 90%;
     }
@@ -122,17 +165,25 @@ $text-color: rgba(255, 253, 253, 0.68);
             display: initial;
             font-size: 3rem;
         }
+
+        .main__button:hover {
+            color: $clrod-green;
+        }
+
+        .main__button {
+            display: initial;
+            font-size: 3rem;
+            border: none;
+            color: black;
+            text-align: center;
+            transition:none;
+            background-color: white;
+            
+        }
+       
     }
+
     .mobilemenu {
         font-size: 4rem;
     }
-
-    .setMobile_l {
-        .header__left__li {
-            display: none;
-        }
-    }
-    .header__img{
-        display: none;
-    }
-}  
+}

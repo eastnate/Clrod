@@ -26,10 +26,7 @@ const Header = () => (
     <div className="navbar">
       <div className="left">
         <NavLink className="header__left__li" to="/">
-          <img className="header__img" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/logo.png?alt=media&token=2e03f469-c50d-4881-a865-bc94588f092b" alt="logo" />
-        </NavLink>
-        <NavLink className="header__left__li" to="/">
-          <div className="header__name">Clrod!</div>
+          <div className="header__name">Clrod</div>
         </NavLink>
       </div>
       <div className="right">
@@ -37,6 +34,7 @@ const Header = () => (
         <NavLink className="header__right__li" to="/service" activeClassName="is-active">Service</NavLink>
         <NavLink className="header__right__li" to="/team" activeClassName="is-active">Team</NavLink>
         <NavLink className="header__right__li" to="/contact" activeClassName="is-active">Contact</NavLink>
+        <NavLink className="main__button" to="/contact" activeClassName="is-active">Blog</NavLink>
       </div>
     </div>
   </header>
@@ -85,11 +83,8 @@ ReactDOM.render(routes, document.getElementById('app'));
 
 function toggle() {
   const navs = document.querySelectorAll('.right')
+  console.log(navs)
   navs.forEach(nav => nav.classList.toggle('setMobile_r'));
-
-  const navs2 = document.querySelectorAll('.left')
-  navs2.forEach(nav => nav.classList.toggle('setMobile_l'));
-
 }
 
 document.querySelector('.header__right__togle').addEventListener('click', toggle)

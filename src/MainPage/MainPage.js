@@ -12,11 +12,10 @@ const MainPage = () => (
         </h1>
 
       <p className="main__subsentence">Software that Anyone can grow.</p>
+     
       <Link to="/service">
-        <button className="main__button" >Check a Service</button>
+      <img className="green__image" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/green.jpg?alt=media&token=a095cb93-dda6-4a3e-9f04-7c19667dc022" alt="loading.." />
       </Link>
-
-      <img className="main__img" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/main.jpeg?alt=media&token=83b1cd2c-d466-4431-9f2c-c8b8c60da3f2" alt="loading.." />
 
       <p className="main__whatwedo"> THE MAJANG-DONG BEST GRAPHICS SOFTWARE EXPERIENCES </p>
 

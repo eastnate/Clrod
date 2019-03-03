@@ -14,7 +14,7 @@ const TeamPage = () => (
     We are waiting for a great colleague.
     </p>
   
-    <h3 className="team__title">Our Story</h3>
+    <h3 className="team__title">About Us</h3>
 
     <div className="team__contents">
       <p className="team__contents__text">
