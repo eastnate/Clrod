@@ -50,19 +50,23 @@
 }
 
 .team__contents__text {
-    font-size: 2.2rem;
+
+    font-size: 2rem;
     line-height:180%;
     color: rgba(0, 0, 0, 0.774);
-    text-align: left;
-
+    text-align: center;
 }
 
-.team__contents__text::first-letter {
-    font-size:200%;
-    color: rgb(2, 167, 16);
+.team__contents__text__last {
+    margin: 7rem auto;
+
+    color: rgba(0, 0, 0, 0.774);
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 15rem;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
 }
-
-
 
 .team__photos {
     width: 70%;

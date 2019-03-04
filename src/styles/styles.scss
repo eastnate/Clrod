@@ -15,7 +15,7 @@ $text-color: rgba(255, 253, 253, 0.68);
     z-index: 3;
     position: fixed;
     width: 100%;
-    background-color: #FBFBFC;
+    background-color: white;
     box-shadow: 2px 2px 4px 2px #ccc;
     top: 0;
 }
@@ -23,17 +23,24 @@ $text-color: rgba(255, 253, 253, 0.68);
 .navbar {
     width: 70%;
     margin: 0 auto;
-    background-color: #FBFBFC;
+    background-color: white;
     display: flex;
     justify-content: space-between;
 }
 
 .left {
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 .right {
     display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .header__left__li {
@@ -43,15 +50,17 @@ $text-color: rgba(255, 253, 253, 0.68);
 }
 
 .header__right__li {
+
     text-decoration: none;
     list-style: none;
 	letter-spacing:0.1rem;
-    padding: 1rem;
-    padding-top: 2rem;
+    // padding: 1rem;
+    // padding-top: 2rem;
     margin: 0 2rem;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     font-weight: lighter;
-    color: black
+    color: black;
+
 }
 
 .header__right__togle {
@@ -84,14 +93,18 @@ $text-color: rgba(255, 253, 253, 0.68);
 
 
 .main__button {
-    padding: 0.05rem;
-    margin: 0 2rem;
-    margin-top: 1.3rem;
-
-    font-size: 1.6rem;
-    font-weight: lighter;
+    text-align: center;
     align-items: center;
     justify-content: center;
+
+    padding: 0.6rem 1.4rem;
+    margin: 0 2rem;
+
+    font-size: 1.8rem;
+
+    font-weight: lighter;
+    align-items: center;
+
 
     background: white;
     color:$clrod-green;
@@ -104,9 +117,9 @@ $text-color: rgba(255, 253, 253, 0.68);
     text-decoration: none;
     list-style: none;
     
-    height:3rem;
-    width: 7rem;
-    font-size: 1.7rem;
+    // height:3rem;
+    // width: 7rem;
+
     transition: 800ms ease all;
   }
   
@@ -187,3 +200,4 @@ $text-color: rgba(255, 253, 253, 0.68);
         font-size: 4rem;
     }
 }
+

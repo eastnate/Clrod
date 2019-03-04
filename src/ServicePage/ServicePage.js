@@ -7,41 +7,49 @@ import './ServicePage.scss'
 const ServicePage = () => (
   <div className="service">
 
-  <div className="service__box">
-    <div className="service__box__img">
-    
-    </div>
-    <div className="service__box__right">
+  <h3 className="service__app__text">APP</h3>
+  <div className="service__app">
+    <figure className="service__app__cosm">
+    <img className="service__app__cosm__logo" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/ComicStackLogo.png?alt=media&token=47da8719-e952-4c6b-b9b0-dcb871d3ec79" alt="loading.." />
+    <figcaption>코믹스택 모바일</figcaption>
+    </figure>
 
-    </div>
+    <figure className="service__app__cosd">
+    <img className="service__app__cosd__logo" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/ComicStackLogo.png?alt=media&token=47da8719-e952-4c6b-b9b0-dcb871d3ec79" alt="loading.." />
+    <figcaption>코믹스택 데스크탑</figcaption>
+    </figure>
   </div>
 
 
-  <div className="service__box">
-  <div className="service__box__left">
+  <h3 className="service__community__text">COMMUNITY</h3>
+  <div className="service__community">
+
+  <figure className="service__community__velbi">
+    <img className="service__community__velbi__logo" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/VelbiLogo.png?alt=media&token=236ed0a8-b82b-4387-ba20-fec8da94cc6d" alt="loading.." />
+    <figcaption>커뮤니티 벨비</figcaption>
+  </figure>
   
-  </div>
-  <div className="service__box__img">
-  
-  </div>
-</div>
-
-
-<div className="service__box">
-<div className="service__box__left">
-
-</div>
-<div className="service__box__img">
-
-</div>
+  <figure className="service__community__solla">
+    <img className="service__community__solla__logo" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/SollaLogo.png?alt=media&token=a8fdb71e-f97c-4ccf-b16c-789ba1ec9c7b" alt="loading.." />
+    <figcaption>커뮤니티 솔라</figcaption>
+  </figure>
 </div>
 
 
 
+<h3 className="service__renderer__text">RENDERER</h3>
+<div className="service__renderer">
+<figure className="service__renderer__clrod">
+<img className="service__renderer__clrod__logo" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/ClrodRendererLogo.png?alt=media&token=f1746272-e098-4ad0-92c3-37cd2c486648" alt="loading.." />
+<figcaption>클로드 렌더러</figcaption>
+</figure>
+</div>
+
+
+</div>
 
 
 
-  </div>
 )
 
 
