@@ -30,8 +30,16 @@ const Header = () => (
         </NavLink>
       </div>
       <div className="right">
-        <div className="header__right__togle"><i className="fas fa-bars mobilemenu"></i></div>      
-        <NavLink className="header__right__li" to="/service" activeClassName="is-active">Service</NavLink>
+
+
+
+      <div class="mobile-menu-btn">
+        <span></span>
+      </div>
+
+
+    
+    <NavLink className="header__right__li" to="/service" activeClassName="is-active">Service</NavLink>
         <NavLink className="header__right__li" to="/team" activeClassName="is-active">Team</NavLink>
         <NavLink className="header__right__li" to="/contact" activeClassName="is-active">Contact</NavLink>
         <NavLink className="main__button" to="/contact" activeClassName="is-active">Blog</NavLink>
@@ -81,10 +89,14 @@ const routes = (
 
 ReactDOM.render(routes, document.getElementById('app'));
 
-function toggle() {
-  const navs = document.querySelectorAll('.right')
-  console.log(navs)
-  navs.forEach(nav => nav.classList.toggle('setMobile_r'));
-}
 
-document.querySelector('.header__right__togle').addEventListener('click', toggle)
+
+
+
+var menuButton = document.querySelector('.mobile-menu-btn');
+var menu = document.querySelector('.menu');
+var toggleMobile = function() {
+  menuButton.classList.toggle('open');
+  //menu.classList.toggle('visible');
+}
+menuButton.addEventListener('click', toggleMobile);

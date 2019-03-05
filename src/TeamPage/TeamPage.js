@@ -18,11 +18,11 @@ const TeamPage = () => (
 
     <div className="team__contents">
       <p className="team__contents__text">
-      클로드는 2019년에 최진우, 엄승탁 2인이 모여 결성한 팀이다.
+      클로드는 2019년에 최진우, 엄승탁 2인이 모여 결성한 팀 입니다.
       <br/> <br/>
-      Web, Renderer, Graphics 등의 작업을 하는 클로드의 키워드는 '성장' 이다.
+      Web, Renderer, Graphics 등의 작업을 하는 클로드의 키워드는 '성장' 입니다.
       <br/> <br/>
-      클로드는 누구든지 성장할 수 있다고 믿고, 그 가치를 그래픽 소프트웨어를 통해 대중들에게 전달하려 한다.
+      누구든지 성장할 수 있다고 믿고, 그 가치를 그래픽 소프트웨어를 통해 대중들에게 전달하려 합니다.
       </p>
       <p className="team__contents__text__last">Clrod</p>
     </div>

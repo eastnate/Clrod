@@ -3,9 +3,9 @@
 @import url('https://fonts.googleapis.com/css?family=Nanum+Gothic');
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
+
 $clrod-green:rgb(2, 167, 16);
 $text-color: rgba(255, 253, 253, 0.68);
-
 
 * {
     color: $clrod-green;
@@ -60,17 +60,75 @@ $text-color: rgba(255, 253, 253, 0.68);
     font-size: 1.8rem;
     font-weight: lighter;
     color: black;
-
 }
 
-.header__right__togle {
-    text-decoration: none;
+
+
+//------ test
+ 
+  .mobile-menu-btn {
+    display: inline-block;
     display: none;
-    padding-top: 0.9rem;
-    margin: 0 1rem;
-    font-size: 1.9rem;
-}
 
+    position: relative;
+    width: 18px;
+    height: 14px;
+    cursor: pointer;
+    
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 2px;
+      background-color: $clrod-green;
+      opacity: 1;
+      transition: opacity .5s ease;
+    }
+    
+    &:before, &:after{
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background-color:$clrod-green;
+      position: absolute;
+    }
+  
+    &:before {
+      top: 0;
+      transform: rotate(0deg);
+      transition: transform .25s ease, top .25s ease .25s;
+    }
+  
+    &:after {
+      bottom: 0;
+      transform: rotate(0deg);
+      transition: transform .25s ease, bottom .25s ease .25s;
+    }
+    
+    &.open {
+      
+      span {
+        opacity: 0;
+        transition: opacity .5s ease;
+      }
+  
+      &:before {
+        top: 6px;
+        transform: rotate(45deg);
+        transition: transform .25s ease .25s, top .25s ease;
+      }
+  
+      &:after {
+        bottom: 6px;
+        transform: rotate(-45deg);
+        transition: transform .25s ease .25s, bottom .25s ease;
+      }
+    }
+  }
+  //------
 .header__right__li:hover { 
     color: $clrod-green;
   }
@@ -96,30 +154,20 @@ $text-color: rgba(255, 253, 253, 0.68);
     text-align: center;
     align-items: center;
     justify-content: center;
-
     padding: 0.6rem 1.4rem;
     margin: 0 2rem;
-
     font-size: 1.8rem;
-
     font-weight: lighter;
     align-items: center;
-
-
     background: white;
     color:$clrod-green;
     border-radius: 0.5rem;
     border-color: $clrod-green;
     border: solid;
     border-width: 0.1rem;
-
     display: flex;
     text-decoration: none;
     list-style: none;
-    
-    // height:3rem;
-    // width: 7rem;
-
     transition: 800ms ease all;
   }
   
@@ -165,8 +213,9 @@ $text-color: rgba(255, 253, 253, 0.68);
         display: none;
     }
    
-    .header__right__togle {
-        display: initial;
+    .mobile-menu-btn {
+        display: inline-block;
+        margin-right: 2rem;
     }
    
     .setMobile_r {
@@ -196,8 +245,6 @@ $text-color: rgba(255, 253, 253, 0.68);
        
     }
 
-    .mobilemenu {
-        font-size: 4rem;
-    }
+
 }
 
