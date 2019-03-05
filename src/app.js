@@ -7,6 +7,7 @@ import MainPage from './MainPage/Mainpage.js'
 import ServicePage from './ServicePage/ServicePage.js'
 import TeamPage from './TeamPage/TeamPage.js'
 import ContactPage from './ContactPage/ContactPage.js'
+import $ from 'jquery'; 
 
 
 class ScrollToTop extends React.Component {
@@ -30,22 +31,39 @@ const Header = () => (
         </NavLink>
       </div>
       <div className="right">
-
-
-
-      <div class="mobile-menu-btn">
-        <span></span>
-      </div>
-
-
-    
     <NavLink className="header__right__li" to="/service" activeClassName="is-active">Service</NavLink>
         <NavLink className="header__right__li" to="/team" activeClassName="is-active">Team</NavLink>
         <NavLink className="header__right__li" to="/contact" activeClassName="is-active">Contact</NavLink>
-        <NavLink className="main__button" to="/contact" activeClassName="is-active">Blog</NavLink>
+        <NavLink className="main__button" to="#" activeClassName="is-active">Blog</NavLink>
       </div>
     </div>
+
+
+
+    
+
+
+    <div className="navbar__mobile">
+    <div className="left">
+      <NavLink className="header__left__li" to="/">
+        <div className="header__name">Clrod</div>
+      </NavLink>
+    </div>
+    <div className="right">
+    <div class="mobile-menu-btn"><span></span></div>
+    </div>
+  </div>
+
+  <nav className="mobile__nav">
+
+      <NavLink className="mobile__link" to="/service" >Service</NavLink>
+      <NavLink className="mobile__link" to="/team">Team</NavLink>
+      <NavLink className="mobile__link" to="/contact">Contact</NavLink>
+      <NavLink className="mobile__link" to="#" >Blog</NavLink>
+
+    </nav>
   </header>
+
 
 )
 
@@ -89,14 +107,13 @@ const routes = (
 
 ReactDOM.render(routes, document.getElementById('app'));
 
-
-
-
-
 var menuButton = document.querySelector('.mobile-menu-btn');
 var menu = document.querySelector('.menu');
 var toggleMobile = function() {
   menuButton.classList.toggle('open');
-  //menu.classList.toggle('visible');
 }
 menuButton.addEventListener('click', toggleMobile);
+
+$('.mobile-menu-btn').click(function() {
+  $('.mobile__nav').slideToggle(200);
+});

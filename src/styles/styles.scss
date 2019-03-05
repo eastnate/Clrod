@@ -10,7 +10,13 @@ $text-color: rgba(255, 253, 253, 0.68);
 * {
     color: $clrod-green;
 }
-
+.mobile__nav{
+    display: none;
+    
+  }
+.navbar__mobile {
+    display: none;
+}
 .header {
     z-index: 3;
     position: fixed;
@@ -50,12 +56,9 @@ $text-color: rgba(255, 253, 253, 0.68);
 }
 
 .header__right__li {
-
     text-decoration: none;
     list-style: none;
 	letter-spacing:0.1rem;
-    // padding: 1rem;
-    // padding-top: 2rem;
     margin: 0 2rem;
     font-size: 1.8rem;
     font-weight: lighter;
@@ -64,71 +67,6 @@ $text-color: rgba(255, 253, 253, 0.68);
 
 
 
-//------ test
- 
-  .mobile-menu-btn {
-    display: inline-block;
-    display: none;
-
-    position: relative;
-    width: 18px;
-    height: 14px;
-    cursor: pointer;
-    
-    span {
-      display: inline-block;
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 18px;
-      height: 2px;
-      background-color: $clrod-green;
-      opacity: 1;
-      transition: opacity .5s ease;
-    }
-    
-    &:before, &:after{
-      content: '';
-      display: inline-block;
-      width: 18px;
-      height: 2px;
-      background-color:$clrod-green;
-      position: absolute;
-    }
-  
-    &:before {
-      top: 0;
-      transform: rotate(0deg);
-      transition: transform .25s ease, top .25s ease .25s;
-    }
-  
-    &:after {
-      bottom: 0;
-      transform: rotate(0deg);
-      transition: transform .25s ease, bottom .25s ease .25s;
-    }
-    
-    &.open {
-      
-      span {
-        opacity: 0;
-        transition: opacity .5s ease;
-      }
-  
-      &:before {
-        top: 6px;
-        transform: rotate(45deg);
-        transition: transform .25s ease .25s, top .25s ease;
-      }
-  
-      &:after {
-        bottom: 6px;
-        transform: rotate(-45deg);
-        transition: transform .25s ease .25s, bottom .25s ease;
-      }
-    }
-  }
-  //------
 .header__right__li:hover { 
     color: $clrod-green;
   }
@@ -201,50 +139,101 @@ $text-color: rgba(255, 253, 253, 0.68);
     font-size: 1.5rem;
 }
 
+
+
 @media (max-width : 800px){
-    .main__button{
+ 
+    .navbar {
         display: none;
     }
-    .navbar {
+    .navbar__mobile {
         width: 90%;
+        margin: 0 auto;
+        background-color: white;
+        display: flex;
+        justify-content: space-between;
+}
+    
+    
+//------ test
+ 
+  .mobile-menu-btn {
+    float:left;
+    position: relative;
+    width: 20px;
+    height: 14px;
+    cursor: pointer;
+    -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+    margin-right: 3rem;
+    
+    span {
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 18px;
+      height: 2px;
+      background-color: $clrod-green;
+      opacity: 1;
+      transition: opacity .5s ease;
     }
     
-    .header__right__li {
-        display: none;
+    &:before, &:after{
+      content: '';
+      display: inline-block;
+      width: 18px;
+      height: 2px;
+      background-color: $clrod-green;
+      position: absolute;
     }
-   
-    .mobile-menu-btn {
-        display: inline-block;
-        margin-right: 2rem;
+  
+    &:before {
+      top: 0;
+      transform: rotate(0deg);
+      transition: transform .25s ease, top .25s ease .25s;
     }
-   
-    .setMobile_r {
-        flex-direction: column;
-        align-items: center;
-        width: 100%;
-        
-        .header__right__li{
-            display: initial;
-            font-size: 3rem;
-        }
-
-        .main__button:hover {
-            color: $clrod-green;
-        }
-
-        .main__button {
-            display: initial;
-            font-size: 3rem;
-            border: none;
-            color: black;
-            text-align: center;
-            transition:none;
-            background-color: white;
-            
-        }
-       
+  
+    &:after {
+      bottom: 0;
+      transform: rotate(0deg);
+      transition: transform .25s ease, bottom .25s ease .25s;
     }
+    
+    &.open {
+      
+      span {
+        opacity: 0;
+        transition: opacity .5s ease;
+      }
+  
+      &:before {
+        top: 6px;
+        transform: rotate(45deg);
+        transition: transform .25s ease .25s, top .25s ease;
+      }
+  
+      &:after {
+        bottom: 6px;
+        transform: rotate(-45deg);
+        transition: transform .25s ease .25s, bottom .25s ease;
+      }
+    }
+  }
+  .mobile__nav{
+    margin: 0 auto;
+    width: 100%;
+  }
 
 
+  .mobile__link{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    text-decoration: none;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    list-style: none;
+    text-align: center;
+  }
 }
-
