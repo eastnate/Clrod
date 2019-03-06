@@ -1,4 +1,6 @@
 @import '../styles/styles';
+
+
 .service {
     width: 80%;
     height: auto;
@@ -9,13 +11,12 @@
     flex-direction: column;
 }
 
-
-.service__app, .service__community, .service__renderer {
+.service__app, .service__community, {
     display: flex;
     justify-content: center;
-
 }
-.service__app__cosm__logo, .service__app__cosd__logo, .service__community__velbi__logo, .service__community__solla__logo, .service__renderer__clrod__logo{
+
+.service__app__cosm__logo, .service__app__cosd__logo, .service__community__velbi__logo, .service__community__solla__logo {
     width: 15rem;
     height: 15rem;
 }

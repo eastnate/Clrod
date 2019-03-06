@@ -10,11 +10,11 @@ const MainPage = () => (
       <h1 className="main__sentence">
         Creativity grows in an environment where you can enjoy it.
         </h1>
-
+        
       <p className="main__subsentence">Software that Anyone can grow.</p>
-     
+
       <Link to="/service">
-      <img className="green__image" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/green.jpg?alt=media&token=a095cb93-dda6-4a3e-9f04-7c19667dc022" alt="loading.." />
+        <img className="green__image" src="https://firebasestorage.googleapis.com/v0/b/clrod-bc004.appspot.com/o/green.jpg?alt=media&token=a095cb93-dda6-4a3e-9f04-7c19667dc022" alt="loading.." />
       </Link>
 
       <p className="main__whatwedo"> THE MAJANG-DONG BEST GRAPHICS SOFTWARE EXPERIENCES </p>
