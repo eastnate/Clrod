@@ -30,6 +30,11 @@ const Header = () => (
           <div className="header__name">Clrod</div>
         </NavLink>
       </div>
+
+
+
+
+
       <div className="right">
         <NavLink className="header__right__li" to="/about" activeClassName="is-active">About</NavLink>
         <NavLink className="header__right__li" to="/service" activeClassName="is-active">Service</NavLink>
@@ -101,3 +106,4 @@ $('.mobile-menu-btn').click(function () {
   $('.mobile-menu-btn').toggleClass('open');
   $('.mobile__nav').slideToggle(200);
 });
+
